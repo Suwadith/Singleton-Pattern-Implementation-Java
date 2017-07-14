@@ -13,10 +13,12 @@ public class Vehicle {
 
     }
 
+    //Returns the instance
     public static Vehicle getVehicle(){
         return vehicle;
     }
 
+    //All the other methods that a class can have
     protected static void cleanTheVehicle(){
         System.out.println("Cleaning Vehicle....");
     }

@@ -7,7 +7,7 @@ public class VehicleDemo {
 
    public static void main(String[] args){
 
-       Vehicle vehicleObj = Vehicle.getInstance();
+       Vehicle vehicleObj = Vehicle.getVehicle();
        vehicleObj.cleanTheVehicle();
        vehicleObj.parkVehicle();
    }

@@ -1,17 +1,20 @@
-package Early_Instantiation;
+package Lazy_Instantiation;
 
 /**
  * Created by Suwadith on 7/14/2017.
  */
 public class Vehicle {
 
-    private static Vehicle vehicle = new Vehicle();
+    private static Vehicle vehicle = null;
 
     private Vehicle(){
 
     }
 
     public static Vehicle getVehicle(){
+        if(vehicle == null){
+            vehicle = new Vehicle();
+        }
         return vehicle;
     }
 

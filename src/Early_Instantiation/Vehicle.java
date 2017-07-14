@@ -5,8 +5,10 @@ package Early_Instantiation;
  */
 public class Vehicle {
 
+    //Creating an instance of the class by creating an object of that particular class
     private static Vehicle vehicle = new Vehicle();
 
+    //Making sure that any other classes will not be able to create an instance of this class
     private Vehicle(){
 
     }
